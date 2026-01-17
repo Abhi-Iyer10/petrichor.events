@@ -23,7 +23,7 @@
 	<!-- <Sponsor name="GAIL" img={GAIL} title="Co-Title Sponsor" /> -->
 	<Sponsor name="Neurobots" img={Neurobots} title="Knowledge & Title Sponsor"/>
 	<Sponsor name="IITians Network" img={IITiansNetwork} title="Community Partner"/>
-	<Sponsor name="FeelFirst Publishing" img={Feelfirst} title="Silver Sponsor"/>
+	<Sponsor name="FeelFirst Publishing LLP" img={Feelfirst} title="Silver Sponsor"/>
 </div>
 
 <!-- <div id="all">
