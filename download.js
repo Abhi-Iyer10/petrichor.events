@@ -514,6 +514,7 @@ if (process.env.get_events == "True") {
             "name": event.name,
             "id": event.eventId,
             "image": event.image_url,
+            "tags": event.tags,
         }
         events[event.eventId.at(0)]['events'][event.eventId] = event_data
     }

@@ -26,6 +26,9 @@
 		setEvent(currentEvent)
 	});
 	// let currEveFee = events1[parseInt(currentEvent.id.slice(2))].fees
+
+	const isEventClosed = (event: FrontEvent) =>
+  		Array.isArray(event.tags) && event.tags.includes("closed");
 	
 	const setEvent = (event: FrontEvent) => {
 		bg.style.backgroundImage = `url("${event.image}")`;
@@ -45,11 +48,8 @@
 		} else {
 			registered = false;
 		}
-		if (closed_events.includes(event.id)) {
-			registration_closed = true
-		} else {
-			registration_closed = false;	
-		}
+		// ✅ Close based on tags
+  		registration_closed = isEventClosed(event);
 	};
 
 	

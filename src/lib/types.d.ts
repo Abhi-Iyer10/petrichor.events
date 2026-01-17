@@ -79,7 +79,8 @@ export type FrontEvent = {
     maxMember:number,
     isTeam:boolean,
     markdown:string,
-    image: string
+    image: string,
+    tags: string[]
 }
 
 export type User = {
